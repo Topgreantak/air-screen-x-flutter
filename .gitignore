@@ -1,0 +1,60 @@
+# ── iDisplay iOS client (Flutter + Swift) — .gitignore ────────────────────────
+# Keep: lib/, ios/Runner/, test/, pubspec.yaml, pubspec.lock, analysis_options.yaml
+# Deps are restorable: `flutter pub get` + (on macOS) `pod install`.
+
+# ── Dart / Flutter tooling & deps (node_modules equivalent) ───
+.dart_tool/
+.pub-cache/
+.pub/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.fvm/
+build/
+doc/api/
+*.dart.js
+*.info.json
+*.js_
+*.js.deps
+*.js.map
+coverage/
+
+# ── iOS / CocoaPods (deps — restore with `pod install`) ───────
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/ephemeral/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/.last_build_id
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+# Keep ios/Podfile and ios/Podfile.lock (checked in for reproducible pods).
+
+# ── Xcode ─────────────────────────────────────────────────────
+**/xcuserdata/
+**/*.xcworkspace/xcuserdata/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ── Android (if a target is added later) ──────────────────────
+android/.gradle/
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+
+# ── OS / editor ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
